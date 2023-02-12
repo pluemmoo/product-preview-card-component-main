@@ -29,6 +29,7 @@ USers shoud be able to:
 ### Screenshot
 
 mobile-view:
+
 ![](images/mobile-view.png)
 
 desktop-view:
