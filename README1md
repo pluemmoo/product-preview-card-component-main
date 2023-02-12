@@ -12,6 +12,10 @@ This is a solution to the [Product preview card component challenge on Frontend 
   - [Links](#links)
 - [My Process](#my-process)
   - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
 
 ## Overview
 
@@ -33,8 +37,8 @@ desktop-view:
 
 ### Links
 
-- Solution URL: 
-- Live Site URL: 
+- Solution URL: https://github.com/pluemmoo/product-preview-card-component-main.git
+- Live Site URL: https://product-preview-card-component-main-inky-nine.vercel.app/
 
 
 ## My Process 
@@ -45,3 +49,57 @@ desktop-view:
 - Syntactically Awesome Styles Sheets
 - Flexbox
 - Mobile-First workflow
+
+### What I learned
+
+I have learned how to use flexbox to adjust my component. I used media quries to switch image between desktop image and mobile image which make component more reponsible.
+
+
+centering component:
+```css
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+```
+
+switching image:
+```css
+.img-mobile {
+    width: 100%;
+}
+
+.img-desktop {
+    display: none;
+}
+```
+```css
+@media screen and (min-width: 1440px) {
+    .img-mobile {
+        display: none;
+    }
+
+    .img-desktop {
+        display: block;
+        width: 30rem;
+    }
+}
+```
+
+
+
+### Continued development
+
+In the next project, i will focus on javascript and CSS Grid.
+
+### Useful resources
+
+- https://stackoverflow.com/questions/27853884/media-queries-and-image-swapping - this helped me when I'm struggling with image switching
+
+## Author
+
+- Website - [Chaiwat Plongkaew](https://pluemmoo.github.io/)
+- Frontend Mentor - [@pluemmoo](https://www.frontendmentor.io/profile/pluemmoo)
